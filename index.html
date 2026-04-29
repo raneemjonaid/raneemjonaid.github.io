@@ -741,13 +741,16 @@
        ========================================= */
     @media (max-width: 900px) {
       :root {
-        --bg:           #EDE3D8;
-        --surface:      #F5EDE2;
-        --accent-bg:    #E8D0D8;
-        --border:       #D8C8BC;
-        --border-light: #E2D4C8;
-        --text-2:       #5C5060;
-        --text-3:       #7D6E74;
+        --bg:           #D9CCB8;
+        --surface:      #E8DBC8;
+        --accent-bg:    #D4B8C0;
+        --border:       #C0AA98;
+        --border-light: #CCBCAA;
+        --text:         #1A1520;
+        --text-2:       #3A3040;
+        --text-3:       #5E5260;
+        --accent:       #A0566A;
+        --accent-dark:  #7A3A50;
       }
 
       .hero {
@@ -788,13 +791,20 @@
 
       /* Bolder fonts on mobile */
       body { font-weight: 400; }
-      .hero__tagline { font-weight: 400; }
+      .heading { font-weight: 700; color: var(--text); }
+      .hero__name { color: var(--text); }
+      .hero__tagline { font-weight: 500; color: var(--text-2); }
       .about__body p { font-weight: 400; }
-      .contact__intro { font-weight: 400; }
+      .about__body p:first-of-type { font-weight: 600; color: var(--text); }
+      .contact__intro { font-weight: 500; }
       .tl-entry__desc { font-weight: 400; }
-      .project-card__desc { font-weight: 400; }
+      .project-card__title { font-weight: 700; color: var(--text); }
+      .project-card__desc { font-weight: 400; color: var(--text-2); }
+      .about__panel-label { font-weight: 700; }
       .about__panel-desc { font-weight: 500; }
+      .eyebrow { font-weight: 700; }
       .nav__menu a { font-weight: 600; }
+      .skills-row__cat { font-weight: 600; color: var(--text-2); }
     }
 
     @media (max-width: 600px) {
