@@ -740,6 +740,16 @@
        RESPONSIVE
        ========================================= */
     @media (max-width: 900px) {
+      :root {
+        --bg:           #EDE3D8;
+        --surface:      #F5EDE2;
+        --accent-bg:    #E8D0D8;
+        --border:       #D8C8BC;
+        --border-light: #E2D4C8;
+        --text-2:       #5C5060;
+        --text-3:       #7D6E74;
+      }
+
       .hero {
         grid-template-columns: 1fr;
         min-height: auto;
@@ -775,6 +785,16 @@
         box-shadow: 0 8px 24px oklch(0% 0 0 / 0.07);
       }
       .nav.open .nav__menu a { font-size: var(--t-lg); }
+
+      /* Bolder fonts on mobile */
+      body { font-weight: 400; }
+      .hero__tagline { font-weight: 400; }
+      .about__body p { font-weight: 400; }
+      .contact__intro { font-weight: 400; }
+      .tl-entry__desc { font-weight: 400; }
+      .project-card__desc { font-weight: 400; }
+      .about__panel-desc { font-weight: 500; }
+      .nav__menu a { font-weight: 600; }
     }
 
     @media (max-width: 600px) {
@@ -1077,7 +1097,9 @@
               <span class="project-card__tool">Power BI</span>
             </div>
             <div class="project-card__actions">
-              <a href="#" class="btn btn-primary btn-sm">View Presentation</a>
+              <a href="files/amazon-products-market-analysis.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+  View Presentation
+</a>
               <a href="https://github.com/raneemjonaid/Amazon_product_Analysis" target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-sm">GitHub</a>
             </div>
           </article>
